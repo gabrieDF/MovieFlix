@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/svg" href="images/logo.png">
+  <link rel="stylesheet" href="login.css">
+  <title>Document</title>
+<style>
+
+body{
+  background: url(https://hifi.de/wp-content/uploads/2020/03/disney-plus-kacheln-1536x1024.jpg);
+  background-size: 100%;
+
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+
+  min-height: 100vh;
+  min-width: 100vw;
+  align-items: center;
+  
+  justify-content: center;
+  min-width: 10vh;
+  
+  margir-top: 3rem;
+}
+
+main.container{
+position: relative;
+  background: white;
+  max-width: 250px;
+  max-height: 350vh;
+  padding: 2rem;
+  margin-left: 0rem;
+  margin-top: 6rem;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+
+}
+
+input{
+  width: 15rem;
+  margin-bottom: 3rem; 
+  padding: 7px;
+  border-radius: 15px;
+}
+
+form{
+  margin-top: 50px;
+}
+
+button{
+  padding: 8px 15px;
+  background-color: rgb(85, 231, 18);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+background-color: blue;
+color: white;
+font-size: 15px;
+transition: 0.5s;
+}
+
+img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+th{
+  padding: 0.7rem;
+  
+}
+
+td{
+  padding: 0.7rem;
+  
+}
+
+.infos{
+	margin-top: 2rem;
+	background-color: white;
+	border-radius: 10rem;
+	width: 50%;
+}
+
+</style>
+</head>
+<body>
+
+<center>
+  <main class="container">
+    <h2>Faça seu login!! <img src="images/logo.png" alt=""></h2>
+  
+    <center>
+    <form action="">
+      <span>Login:</span>
+    <div class="input-nome">
+    <input type="text" name="Username" id="txtemail"
+    placeholder="Digite seu Usuario">
+    </div>
+  <span>Senha:</span>
+    <div class="input-senha" > 
+      <input type="password" name="password" id="txtsenha" placeholder="Digite sua senha">
+      <div class="underline"></div>
+    </div>
+  </center>
+    
+</form>
+  <button onclick="logar()" type="button" class="btn btn-primary">Login</button>
+</main>
+
+
+
+  <div class="infos">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">cep</th>
+        <th scope="col">cpf</th>
+        <th scope="col">email</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Senha</th>
+        <th scope="col">Telefone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="id">null</th>
+    <td id="cep">null</td>
+    <td id="cpf">null</td>
+    <td id="email">null</td>
+    <td id="nome">null</td>
+    <td id="senha">null</td>
+    <td id="telefone">null</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</center>
+<script type="text/javascript" src="/index.js"></script>
+</body>
+</html>

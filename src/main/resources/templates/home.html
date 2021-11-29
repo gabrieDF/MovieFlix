@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" type="imagex/svg" href="images/logo.png">
+  <title>MovieFlix</title>
+
+<style>
+
+body{
+  background: url(https://hifi.de/wp-content/uploads/2020/03/disney-plus-kacheln-1536x1024.jpg);
+  background-size: 100%;
+
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  min-width: 10vh;
+
+  
+}
+
+.apresentacao{
+  
+  color: white;
+  justify-content: center;
+  
+  
+}
+
+
+img{
+  position: relative;
+  margin-top: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+h1{
+  margin: 5rem;
+  font-size: 3rem;
+}
+
+.p{
+  max-width: 90%;
+  background-color: rgb(221, 220, 220);
+  border-radius: 1rem;
+  box-sizing: rgba(0,0,1,1);
+}
+
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:2rem;
+  color: rgb(0, 0, 0);
+}
+
+input{
+  margin: 3rem 1rem;
+  padding: 10px 30px;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input:hover{
+  position: relative;
+  background-color: rgb(3, 241, 43);
+  transition: 0.8s;
+  color: azure;
+  font-size: 18px;
+}
+
+.login{
+  position: relative;
+  padding: 10px 45px;
+}
+
+.cadastro{
+  margin-top: -60px;
+  position: relative;
+}
+
+
+footer{
+  margin-top: 2rem;
+  padding: 2rem;
+  color: aliceblue;
+  background-color: black;
+  
+}
+
+.inscreva{
+  color: aliceblue;
+}
+</style>
+</head>
+<body>
+
+  <center>
+<div class="apresentacao">
+  <h1>MovieFlix <img url=https://as1.ftcdn.net/v2/jpg/00/80/56/28/1000_F_80562883_PAJJNiVcccBaPnU1ee1vNredJ5mJkYyz.jpg alt=""> </h1>
+  <div class="p">
+  <p>Seja Muito bem vindo a nossa platafoma de filmes e series!!</p>
+  <p>Tenha acesso a milhares de filmes e series!!</p>
+  <p>E tudo isso com um super valor acessivel!!</p>
+</div>
+
+<form  method="get" action="/login">
+<input class="login" type="submit" value="Login">
+</form>
+
+<p class="inscreva">Inscreva-se já!!</p>
+
+<form method="get" action="/cadastro">
+<input class="cadastro" type="submit" value="Cadastre-se">
+</form>
+
+</div>
+</center>
+
+<script src="/index.js"></script>
+
+
+</body>
+</html>

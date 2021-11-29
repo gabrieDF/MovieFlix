@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
+
+<style>
+
+@import url('https://fonts.googleapis./css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+    background: url(https://hifi.de/wp-content/uploads/2020/03/disney-plus-kacheln-1536x1024.jpg);
+  background-size: 100%;
+
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  min-width: 10vh;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.card {
+    background: rgb(226,10,10);
+background: radial-gradient(circle, rgba(226,10,10,1) 28%, rgba(0,0,0,1) 100%); 
+    padding: 30px;
+    width: 100%;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    box-sizing: rgba(1,1,1,1);
+    border-top: 2rem;
+    border-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #ffffff80;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+    .label-float {
+        position: relative;
+        padding-top: 13px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .label-float input:focus{
+        border-bottom: 2px solid #ffff;
+    }
+
+    .label-float label{
+        color: black;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 13px;
+        transition: all .3s ease-out;
+    }
+
+    .label-float input:focus + label{
+        font-size: 13px;
+        margin-top: 0;
+        color: #ffff;
+        }
+
+    button {
+        background-color: transparent;
+        border: #00000060;
+        color: black;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 12pt;
+        margin-top: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    button:hover {
+        background-color: #00000060;
+        color: white;
+        transition: 1s;
+    }
+
+</style>
+
+</head>
+<body>
+    <center>
+    <div class = 'container'>
+        
+        <div class = 'card'>
+
+            <h1> Cadastrar </h1>
+
+ 			<div class="label-float">
+                <input type="text" id='txid' placeholder=" id">
+                <label for='Nome'> </label>
+
+            <div class="label-float">
+                <input type="text" id='txnome' placeholder="Nome">
+                <label for='Nome'>  </label>
+                
+            
+            <div class="label-float">
+                <input type="text" id='txemail' placeholder="E-mail">
+                <label for='E-mail'>  </label>
+                
+            <div class="label-float">
+            <input type="text" id='txtelefone' placeholder="Telefone">
+            <label for='TELEFONE'>  </label>
+                
+
+                <div class="label-float">
+                <input type="text" id='txcpf' placeholder="CPF">
+                <label for='CPF'>  </label>
+
+                <div class="label-float">
+                <input type="text" id='txcep' placeholder="CEP">
+                <label for=''>  </label>
+
+
+
+                    <h1> Senha </h1>
+                    
+                    <div class="label-float">
+                        <input type="password" id='txsenha' placeholder="Senha">
+                        <label for='Senha'>  </label>
+        
+                    </div>
+        
+                    </div>
+
+
+                    <div class="justify-center">
+                       <button onclick="cadastrar()" type="button" class="btn btn-primary">cadastrar</button>
+                    </div>
+
+					<div class="justify-center">
+                       <button onclick="deletar()" type="button" class="btn btn-primary">deletar</button>
+                    </div>
+
+					<div class="justify-center">
+                       <button onclick="update()" type="button" class="btn btn-primary">update</button>
+                    </div>
+
+            </div>
+         
+        </div>
+        
+    </div></center>
+
+<script type="text/javascript" src="/index.js"></script>
+</body>
+</html>
